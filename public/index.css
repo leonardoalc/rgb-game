@@ -1,25 +1,118 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
     padding: 0px;
     margin: 0px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 header {
-    background-color: rgb(137, 238, 186);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    color: white;
+    
+    height: 80px;
+
+    box-shadow: -1px 1px 11px 2px rgba(0, 0, 0, 0.473);
+
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.466);
+}
+#container-botao {
+    text-align: center;
+
+    width: 350px;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container-cores {
+    display: flex;
+    
+    height: 30px;
+    
+    gap: 10px;
+}
+.cores-percent {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+
+    margin-bottom: 10px;
+
+    align-items: center;
+    justify-content: center;
+
     color: white;
 }
-nav {
-    background-color: rgb(158, 210, 255);
+#r {
+    background-color: #cc5454;
+}
+#g {
+    background-color: #54cc5e;
+}
+#b {
+    background-color: #2a6bc0;
+}
+button {
+    width: 130px;
+    height: 30px;
+
+    font-family: "Raleway", sans-serif;
+
+    background-color: white;
+
+    border: 1px solid #cc5490;
+    border-radius: 5px;
+
+    color: #cc5490;
+
+    box-shadow: 1px 2px 6px #cc5490;
+
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+button.desativado {
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.274);
+    border: 1px solid gray;
+    color: gray;
+}
+button:active {
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.274);
+    font-size: 0.79em;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    
 }
 main {
     display: flex;
     gap: 10px;
 
-    width: 500px;
+    max-width: 500px;
 
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
 
@@ -49,4 +142,10 @@ main {
 }
 #q2 {
     background-color: red;
+}
+@media(max-width: 500px) {
+    .quadro-cor {
+        height: 100px;
+        width: 100px;
+    }
 }

@@ -11,16 +11,22 @@
 <body>
     <header>
         <h1>RGB Game</h1>
-        <h2>RGB(<span id="r">198</span>, <span id="g">229</span>, <span id="b">148</span>)</h2>
-        <nav>
-            <button onclick="gerarCor()">New Colors</button>
-        </nav>
     </header>
+    <div id="container-botao">
+        <div id="container-cores">
+            <span class="cores-percent" id="r"></span>
+            <span class="cores-percent" id="g"></span>
+            <span class="cores-percent" id="b"></span>
+        </div>
+        <button onclick="gerarCor()">New Colors <i class="fa-solid fa-rotate-right"></i></button>
+    </div>
+    <h2 id="recado">Adivinhe a cor</h2>
     <main>
         <div class="quadro-cor" id="q0"></div>
         <div class="quadro-cor" id="q1"></div>
         <div class="quadro-cor" id="q2"></div>
     </main>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/e9ee83335e.js" crossorigin="anonymous"></script>
 </body>
 </html>
